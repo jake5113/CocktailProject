@@ -7,7 +7,7 @@
 
     //2. curl로 작업할 요청에 대한 설정 옵션들
     //2-1. 요청할 서버 주소 URL 설정
-    curl_setopt($ch, CURLOPT_URL, "http://webtoast2023.dothome.co.kr/place/html/cocktailPlace.html");
+    curl_setopt($ch, CURLOPT_URL, "http://webtoast2023.dothome.co.kr/AJAX/06_openapi_ajax.html");
     
     
     //sqlite랑 비슷한데? CURLOPT_URL: 이미 정해진값

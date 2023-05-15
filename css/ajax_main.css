@@ -1,9 +1,21 @@
 *{margin: 0px; padding: 0px;}
 
-body{
-    background-color:palegreen;
-}
+
 
 li:hover{
     color: brown;
+    
+}
+
+aside#left{
+   
+    float:left;
+    width: 10em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+img{
+    width: 60%;
+    /* float: right; */
 }
