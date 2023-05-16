@@ -2,13 +2,43 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>ajax</title> 
+        <title>칵테일 닭고기 공식 홈페이지</title> 
         <link rel="stylesheet" href="../css/ajax_main.css">
         <!-- ajax는 웹 서버환경에서만 동작함. http로 시작하는 웹 주소에서만 동작함. -->
 
         <script>
               //cross origin 문제를 해결하기 위해 중간 php 서버프로그램을 이용
-              function clickBtn(){
+              function clickIntro(){
+                var xhr= new XMLHttpRequest();
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4 && xhr.status==200){
+                        document.getElementById('target').innerHTML=xhr.responseText;
+
+                    }
+                    
+                }
+
+                xhr.open('GET','./intro.php',true);
+                xhr.send(); //php 파일만들기
+
+            }
+
+            function clickRecipes(){
+                var xhr= new XMLHttpRequest();
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4 && xhr.status==200){
+                        document.getElementById('target').innerHTML=xhr.responseText;
+
+                    }
+                    
+                }
+
+                xhr.open('GET','./recipes.php',true);
+                xhr.send(); //php 파일만들기
+
+            }
+
+            function clickPlace(){
                 var xhr= new XMLHttpRequest();
                 xhr.onreadystatechange=function(){
                     if(xhr.readyState==4 && xhr.status==200){
@@ -22,23 +52,50 @@
                 xhr.send(); //php 파일만들기
 
             }
-            s
+
+            function clickTest(){
+                var xhr= new XMLHttpRequest();
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4 && xhr.status==200){
+                        document.getElementById('target').innerHTML=xhr.responseText;
+
+                    }
+                    
+                }
+
+                xhr.open('GET','./aboutTest.php',true);
+                xhr.send(); //php 파일만들기
+
+            }
+            
 
   
         </script>
     </head>
     <body>
-        <p>
-            <li onclick="clickBtn()">introduce</li>
-            <li onclick="clickBtn()">introduce</li>
-            <li onclick="clickBtn()">introduce</li>
-            <li onclick="clickBtn()">introduce</li>
-        </p>
 
-        <hr>
+       
+
+        <aside id="left">
+            <ul>
+                <li onclick="clickIntro()">introduce</li>
+                <li onclick="clickRecipes()">recipes</li>
+                <li onclick="clickPlace()">place</li>
+                <li onclick="clickTest()">about test</li>
+            </ul>
+        </aside>
+
+        
+    
         <!-- 서버의 응답결과를 보여주는 영역 요소 -->
-        <img src="../image/mrit_admin.png" alt="mrit_admin">
-        <div id="target"></div>
+        
+        <section>
+            <div id="target">
+                <img src="../image/main.jpg" alt="main">
+            </div>
+           
+        </section>
+        
 
     </body>
 </html>
