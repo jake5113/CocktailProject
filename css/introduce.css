@@ -1,4 +1,22 @@
-#text {
-    color: red;
-    width: 50%;
+*{
+    border:1px dotted red;
 }
+
+main {
+    padding: 5%;
+}
+
+.history span{
+    flex: auto;
+    padding-right: 5%
+}
+.history img{
+    display: inline;
+    float: right;
+    width: 300px;
+    object-fit: contain;
+}
+.history div {
+    display: flex;
+    justify-content: 5%;
+  }
