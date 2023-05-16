@@ -1,22 +1,77 @@
-*{
-    border:1px dotted red;
+* {
+    /* border:1px dotted red; */
+    padding: 0;
+    margin: 0;
+}
+
+#introduce_theme {
+    margin: 30px;
 }
 
 main {
     padding: 5%;
 }
 
-.history span{
-    flex: auto;
-    padding-right: 5%
-}
-.history img{
-    display: inline;
-    float: right;
-    width: 300px;
-    object-fit: contain;
-}
-.history div {
+#context {
     display: flex;
-    justify-content: 5%;
-  }
+}
+
+.history {
+    margin: 30px;
+    display: flex;
+}
+
+.history .context p {
+    font-size: large;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.history .context h2 {
+    padding: 10px;
+
+}
+
+.history img {
+    display: inline;
+    width: 400px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .history img {
+        /* 태블릿에 대한 스타일 지정 */
+        width: 350px;
+    }
+    .history .context p{
+        font-size: medium;
+    }
+    
+    .history {
+        flex-wrap: wrap;
+    }
+    .history .context {
+        order: 2;
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    .history img {
+        /* 휴대폰에 대한 스타일 지정 */
+        
+        width: 300px;
+    }
+    .history .context p{
+        font-size: medium;
+    }
+    
+}
+
+
+#introduce_theme {
+    display: block;
+    text-align: center;
+}
