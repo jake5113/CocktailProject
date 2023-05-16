@@ -1,7 +1,8 @@
 .indent * {
-    text-indent: 1em;
+    text-indent: -20px;
+    padding-left: 10px;
 }
 
 .text_indent {
-    margin-left: 3em;
+    margin-left: 10px;
 }
