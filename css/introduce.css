@@ -1,22 +1,117 @@
-*{
-    border:1px dotted red;
+* {
+    /* border: 1px dotted red; */
+    padding: 0;
+    margin: 0;
 }
 
-main {
-    padding: 5%;
-}
-
-.history span{
-    flex: auto;
-    padding-right: 5%
-}
-.history img{
-    display: inline;
-    float: right;
-    width: 300px;
-    object-fit: contain;
-}
-.history div {
+.flex_container {
     display: flex;
-    justify-content: 5%;
-  }
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#introduce_theme {
+    margin: 80px;
+    display: block;
+    text-align: center;
+}
+
+.sub_theme {
+    display: block;
+    text-align: center;
+}
+
+
+.container {
+    margin: 30px;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.container .context p {
+    font-size: large;
+    padding: 10px;
+    line-height: 3;
+}
+
+
+
+.container img {
+    display: inline;
+    width: 500px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.about_container {
+    margin-bottom: 200px;
+}
+.about_container .context p {
+    font-size: large;
+    padding: 10px;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container img {
+        width: 300px;
+    }
+
+    .container .context p {
+        font-size: large;
+        line-height: 2;
+    }
+
+    .container {
+        width: 800px;
+        gap: 60px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container img {
+        /* 태블릿에 대한 스타일 지정 */
+        width: 350px;
+    }
+
+    .container .context p {
+        font-size: medium;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 400px;
+        flex-wrap: wrap;
+    }
+
+    .container .context {
+        order: 2;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #introduce_theme {
+        font-size: xx-large;
+    }
+
+
+    .container img {
+        /* 휴대폰에 대한 스타일 지정 */
+
+        width: 300px;
+    }
+
+    .container .context p {
+        font-size: medium;
+    }
+
+}
