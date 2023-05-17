@@ -6,3 +6,19 @@
 .text_indent {
     margin-left: 10px;
 }
+
+.table_title {
+    background-color: aliceblue;
+}
+
+/* 태블릿에 대한 스타일 */
+@media (max-width: 768px) {
+    #pc_screen { display: block; }
+    #mobile_screen { display: none; }
+}
+
+/* 휴대폰에 대한 스타일 */
+@media (max-width: 480px) {
+    #pc_screen { display: none; }
+    #mobile_screen { display: block; }
+}
