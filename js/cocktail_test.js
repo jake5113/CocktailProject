@@ -1,5 +1,10 @@
 window.onload = function() {
     test3Content();
+
+    var mql = window.matchMedia("screen and (max-width:480px)");
+    if(mql.matches) {
+        document.getElementById('mobile_screen').style.display = 'none';
+    }
 };
 
 // 1차 시험 내용
