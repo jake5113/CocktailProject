@@ -1,9 +1,13 @@
-var clickedtestEl = document.getElementsByClassName('')
+window.onload = function() {
+    test3Content();
+};
 
 // 1차 시험 내용
 function test1Content() {
-    var test1 = document.getElementById('test1');
-
+    document.getElementById('test1').classList.add('active');
+    document.getElementById('test2').classList.remove('active');
+    document.getElementById('test3').classList.remove('active');
+    document.getElementById('test4').classList.remove('active');
 
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -18,7 +22,12 @@ function test1Content() {
 }
 
 // 2차 시험 내용
-function test1Content() {
+function test2Content() {
+    document.getElementById('test1').classList.remove('active');
+    document.getElementById('test2').classList.add('active');
+    document.getElementById('test3').classList.remove('active');
+    document.getElementById('test4').classList.remove('active');
+
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4 && xhr.status == 200) {
@@ -32,9 +41,13 @@ function test1Content() {
 }
 
 // 3차 시험 내용
-function test1Content() {
+function test3Content() {
+    document.getElementById('test1').classList.remove('active');
+    document.getElementById('test2').classList.remove('active');
+    document.getElementById('test3').classList.add('active');
+    document.getElementById('test4').classList.remove('active');
+    
     var url = "./cocktail_test_test3.php";
-
     fetch(url).then(function(response){return response.text();})
     .then(function(responseText){
         document.getElementById('test_content').innerHTML = responseText;
@@ -42,7 +55,12 @@ function test1Content() {
 }
 
 // 4차 시험 내용
-function test1Content() {
+function test4Content() {
+    document.getElementById('test1').classList.remove('active');
+    document.getElementById('test2').classList.remove('active');
+    document.getElementById('test3').classList.remove('active');
+    document.getElementById('test4').classList.add('active');
+
     fetch("./cocktail_test_test4.php")
     .then(function(response){return response.text()})
     .then(function(responseText){

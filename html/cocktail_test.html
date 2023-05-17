@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <div id="pc_screen" style="display: block;">
+    <div id="pc_screen">
         <table>
             <tr>
                 <td><strong>자격명</strong></td>
@@ -71,7 +71,7 @@
                 <img src="../image/icon_cocktail_test.png" alt="" width="10">
                 <strong>검정형 자격 시험 일정</strong>
             </legend>
-            <tr style="background-color: aliceblue;">
+            <tr class="table_title">
                 <th>구분</th>
                 <th>필기원서접수</th>
                 <th>필기시험</th>
@@ -138,19 +138,20 @@
             </legend>
     
             <tr>
-                <td style="background-color: aliceblue;"><strong>수수료</strong></td>
+                <td class="table_title"><strong>수수료</strong></td>
             </tr>
             <tr>
                 <td>- 필기 : 14500 원 / - 실기 : 28600 원</td>
             </tr>
     
             <tr>
-                <td style="background-color: aliceblue;"><strong>응시하기</strong></td>
+                <td class="table_title"><strong>응시하기</strong></td>
             </tr>
             <tr>
                 <td>
-                    조주기능사 <span style="color: blue;">응시 사이트</span> 입니다.<br>
-                    <a style="display: inline-block;" href="https://www.q-net.or.kr/crf005.do?id=crf00505&jmCd=7916">조주기능사 응시 사이트</a>
+                    조주기능사
+                    <a style="display: inline-block;" href="https://www.q-net.or.kr/crf005.do?id=crf00505&jmCd=7916" target="_blank">응시 사이트</a>
+                    입니다. 링크를 눌러 해당 사이트로 이동하세요.                    
                 </td>
             </tr>
         </table>
@@ -185,19 +186,23 @@
             </tr>
     
             <tr>
-                <td><span class="text_indent">과정평가형 자격 홈페이지(CQ-Net) <a href="https://c.q-net.or.kr">https://c.q-net.or.k</a></span></td>
+                <td><span class="text_indent">과정평가형 자격 홈페이지(CQ-Net) <a href="https://c.q-net.or.kr" target="_blank">https://c.q-net.or.k</a></span></td>
             </tr>
     
             <tr>
                 <td>
                     <span class="text_indent">과정평가형 자격 편성기준
-                    <a href="https://c.q-net.or.kr/cont/bbs/cbqOrganStdBbsList.do">https://c.q-net.or.kr/cont/bbs/cbqOrganStdBbsList.do</a></span>
+                    <a href="https://c.q-net.or.kr/cont/bbs/cbqOrganStdBbsList.do" target="_blank">https://c.q-net.or.kr/cont/bbs/cbqOrganStdBbsList.do</a></span>
                 </td>
             </tr>
         </table>
+        <br>
+        <span style="font-size: 8px;">
+            원 아이콘 : <a href="https://www.flaticon.com/kr/free-icons/-vol-1circle" title="원 vol 1circle 아이콘" target="_blank">원 vol 1circle 아이콘  제작자: riajulislam - Flaticon</a>
+        </span>
     </div>
 
-    <div id="mobile_screen" style="display: none;">
+    <div id="mobile_screen">
         <div class="title_area">
             <h2>조주기능사 시험정보</h2>
         </div>
@@ -210,7 +215,7 @@
                     <a class="nav-link" id="test2" onclick="test2Content()" href="#" aria-selected="false">2차</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ac" id="test3" onclick="test3Content()" href="#" aria-selected="true">3차</a>
+                    <a class="nav-link active" id="test3" onclick="test3Content()" href="#" aria-selected="true">3차</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="test4" onclick="test4Content()" href="#" aria-selected="false">4차</a>
@@ -220,11 +225,5 @@
             <div id="test_content"></div>
         </div>
     </div>
-    
-    <br>
-
-    <span style="font-size: 8px;">
-        원 아이콘 : <a href="https://www.flaticon.com/kr/free-icons/-vol-1circle" title="원 vol 1circle 아이콘" target="_blank">원 vol 1circle 아이콘  제작자: riajulislam - Flaticon</a>
-    </span>
 </body>
 </html>
