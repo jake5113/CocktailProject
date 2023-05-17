@@ -3,11 +3,13 @@ Scorilo 1.0.1 - HTML Template by WowThemes.net
 Visit: https://www.wowthemes.net
 ================================================== */
 body {
+	
 	font-family:Roboto;
 	font-weight:300;
 	font-size:16px;
-	color:#777;
+	color:#777777;
 	line-height:1.7;
+
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family:Roboto;
@@ -41,9 +43,11 @@ a:hover {
 	background-repeat:no-repeat;
 }
 header .navbar-white a {
-	color:#3D566E;
+	/* 헤더 메뉴바 텍스트 컬러 */
+	color:#000000;
 	font-weight:700;
 }
+
 .item.content,.item.portfolio,.item.team,.item.pricing,.item.contact {
 	padding-top:40px;
 	padding-bottom:0px;
@@ -59,20 +63,24 @@ header .navbar-white {
 	box-shadow:0px 3px 2px 0px rgba(50,50,50,0.1);
 }
 .item.header {
-	background-image:url(../images/homeimg.jpg);
+	/* 메인 이미지  */
+	background-image:url(../images/cocktail.jpg);
 	background-repeat:no-repeat;
 	background-position:0% top;
 	background-size:cover;
 	background-attachment:scroll;
-	background-color:rgba(0,0,0,0);
+	background-color:rgba(0, 0, 0, 0);
 }
+
 .navbar-nav,.navbar>.container .navbar-brand {
 	font-family:Dosis;
 	text-transform:uppercase;
 }
+
 	.text-homeimage {
+		/* 메인 대문 Cocktail Taste */
 	text-align:center;
-	color:#fff;
+	color:rgb(252, 252, 255);
 	z-index:2;
 	position:relative;
 	font-size:75px;
@@ -81,8 +89,10 @@ header .navbar-white {
 	padding-top:190px;
 	padding-bottom:190px;
 	font-weight:700;
-	font-family:Dosis;
+	font-family:Roboto;
 }
+
+
 .text-pageheader {
 	 text-align:center;
 	color:#fff;
