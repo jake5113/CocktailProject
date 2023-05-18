@@ -17,7 +17,9 @@ function showList() {
           + '<div class="card h-100">'
           + '<!-- Product image-->'
           + '<img class="card-img-top" src='
+          + '"'
           + Object.values(recipe[i])[1]
+          + '"'
           + 'alt="사진 없음" />'
           + '<!-- Product details-->'
           + '<div class="card-body p-4">'
@@ -30,16 +32,16 @@ function showList() {
           + '<h5 class="text-gradient">재료</h5>'
           + gredient(recipe[i].재료)
           + '<h5 class="text-gradient">기법</h5>'
-          + '<p>' 
+          + '<p>'
           + recipe[i].기법
           + '</p>'
           + '<h5 class="text-gradient">글라스</h5>'
-          + '<p>' 
+          + '<p>'
           + recipe[i].글라스
           + '</p>'
           + '<h5 class="text-gradient">장식</h5>'
-          + '<p>' 
-          + recipe[i].장식 
+          + '<p>'
+          + recipe[i].장식
           + '</p>'
           + '</div>'
           + '</div>'
@@ -52,10 +54,10 @@ function showList() {
     });
 }
 
-function gredient(object){
+function gredient(object) {
   var sentences = ''
   for (let index = 0; index < Object.keys(object).length; index++) {
-    sentences += '<li>'+Object.keys(object)[index]+ ' ' + Object.values(object)[index] +'</li>'
+    sentences += '<li>' + Object.keys(object)[index] + ' ' + Object.values(object)[index] + '</li>'
   }
   return sentences
 }
