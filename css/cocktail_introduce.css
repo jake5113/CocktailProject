@@ -1,7 +1,5 @@
-* {
-    /* border: 1px dotted red; */
-    padding: 0;
-    margin: 0;
+*{
+    border: 1px dotted red;
 }
 
 .flex_container {
@@ -12,7 +10,7 @@
 }
 
 #introduce_theme {
-    margin: 80px;
+    padding: 80px;
     display: block;
     text-align: center;
 }
@@ -23,8 +21,8 @@
 }
 
 
-.container {
-    margin: 30px;
+.introduce_container {
+    padding: 30px;
     display: flex;
     width: 1000px;
     justify-content: center;
@@ -32,7 +30,7 @@
     gap: 100px;
 }
 
-.container .context p {
+.introduce_container .context p {
     font-size: large;
     padding: 10px;
     line-height: 3;
@@ -40,7 +38,7 @@
 
 
 
-.container img {
+.introduce_container img {
     display: inline;
     width: 500px;
     object-fit: contain;
@@ -60,16 +58,16 @@
 
 
 @media (max-width: 1200px) {
-    .container img {
+    .introduce_container img {
         width: 300px;
     }
 
-    .container .context p {
+    .introduce_container .context p {
         font-size: large;
         line-height: 2;
     }
 
-    .container {
+    .introduce_container {
         width: 800px;
         gap: 60px;
     }
@@ -77,22 +75,22 @@
 }
 
 @media (max-width: 768px) {
-    .container img {
+    .introduce_container img {
         /* 태블릿에 대한 스타일 지정 */
         width: 350px;
     }
 
-    .container .context p {
+    .introduce_container .context p {
         font-size: medium;
         line-height: 1.5;
     }
 
-    .container {
+    .introduce_container {
         width: 400px;
         flex-wrap: wrap;
     }
 
-    .container .context {
+    .introduce_container .context {
         order: 2;
     }
 
@@ -104,13 +102,13 @@
     }
 
 
-    .container img {
+    .introduce_container img {
         /* 휴대폰에 대한 스타일 지정 */
 
         width: 300px;
     }
 
-    .container .context p {
+    .introduce_container .context p {
         font-size: medium;
     }
 
