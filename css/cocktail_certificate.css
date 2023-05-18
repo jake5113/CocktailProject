@@ -1,5 +1,53 @@
 body {
-    padding: 10%;
+    padding: 7% 10% 7% 10%;
+}
+
+#pc_screen {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#table_top {
+    display: inline-block;
+    border: 1px dashed black;
+    padding: 5%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    border-radius: 20px;
+}
+
+#table_test_content {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px dashed rgb(216, 216, 216);
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+
+#table_test_content th, #table_test_content td,
+#table_test_data th, #table_test_data td {
+    padding: 8px 10px;
+}
+
+#table_test_data {
+    display: inline-block;
+    border: 1px dashed rgb(216, 216, 216);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#table_test_data th, #table_test_data td {
+    width: 850px;
+}
+
+.border_bottom {
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.border_right {
+    border-right: 1px solid rgb(216, 216, 216);
 }
 
 .indent * {
@@ -15,9 +63,35 @@ body {
     background-color: aliceblue;
 }
 
+#div_content {
+    text-indent: 1em;
+    width: 850px;
+    border: 1px solid rgb(180, 179, 179);
+    margin-top: 13px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#table_certificate_info {
+    display: inline-block;
+    border: 1px dashed rgb(216, 216, 216);
+    border-radius: 20px;
+}
+
+#table_certificate_info td {
+    padding: 8px 10px;
+    width: 900px;
+}
+
+
 /* 태블릿에 대한 스타일 */
-@media (min-width: 481px) {
+@media (max-width: 768px) {
     #pc_screen { display: block; }
+    table, div {
+    font-size: 15px;
+    }
     #mobile_screen { display: none; }
 }
 
