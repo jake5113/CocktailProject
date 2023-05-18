@@ -23,9 +23,10 @@ window.onresize = function() {
     }
 }
 
+
 // 1차 시험 내용
-function test1Content() {
-    document.getElementById('test1').classList.add('active');
+document.getElementById('test').addEventListener('click', function(){
+    this.classList.add('active');
     document.getElementById('test2').classList.remove('active');
     document.getElementById('test3').classList.remove('active');
     document.getElementById('test4').classList.remove('active');
@@ -38,14 +39,14 @@ function test1Content() {
         }
     }
 
-    xhr.open('GET', '../php/cocktail_certificate_exam1.php', true);
+    xhr.open('GET', './php/cocktail_certificate_exam1.php', true);
     xhr.send();
-}
+});
 
 // 2차 시험 내용
-function test2Content() {
+document.getElementById('test2').addEventListener('click', function(){
+    this.classList.add('active');
     document.getElementById('test1').classList.remove('active');
-    document.getElementById('test2').classList.add('active');
     document.getElementById('test3').classList.remove('active');
     document.getElementById('test4').classList.remove('active');
 
@@ -57,34 +58,34 @@ function test2Content() {
         }
     }
     
-    xhr.open('GET', '../php/cocktail_certificate_exam2.php', true);
+    xhr.open('GET', './php/cocktail_certificate_exam2.php', true);
     xhr.send();
-}
+});
 
 // 3차 시험 내용
-function test3Content() {
+document.getElementById('test3').addEventListener('click', function(){
+    this.classList.add('active');
     document.getElementById('test1').classList.remove('active');
     document.getElementById('test2').classList.remove('active');
-    document.getElementById('test3').classList.add('active');
     document.getElementById('test4').classList.remove('active');
     
-    var url = "../php/cocktail_certificate_exam3.php";
+    var url = "./php/cocktail_certificate_exam3.php";
     fetch(url).then(function(response){return response.text();})
     .then(function(responseText){
         document.getElementById('test_content').innerHTML = responseText;
     });
-}
+});
 
 // 4차 시험 내용
-function test4Content() {
+document.getElementById('test4').addEventListener('click', function(){
+    this.classList.add('active');
     document.getElementById('test1').classList.remove('active');
     document.getElementById('test2').classList.remove('active');
     document.getElementById('test3').classList.remove('active');
-    document.getElementById('test4').classList.add('active');
 
-    fetch("../php/cocktail_certificate_exam4.php")
+    fetch("./php/cocktail_certificate_exam4.php")
     .then(function(response){return response.text()})
     .then(function(responseText){
         document.getElementById('test_content').innerHTML = responseText;
     });
-}
+});
