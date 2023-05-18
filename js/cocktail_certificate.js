@@ -38,7 +38,7 @@ function test1Content() {
         }
     }
 
-    xhr.open('GET', './cocktail_test_test1.php', true);
+    xhr.open('GET', '../php/cocktail_certificate_exam1.php', true);
     xhr.send();
 }
 
@@ -57,7 +57,7 @@ function test2Content() {
         }
     }
     
-    xhr.open('GET', './cocktail_test_test2.php', true);
+    xhr.open('GET', '../php/cocktail_certificate_exam2.php', true);
     xhr.send();
 }
 
@@ -68,7 +68,7 @@ function test3Content() {
     document.getElementById('test3').classList.add('active');
     document.getElementById('test4').classList.remove('active');
     
-    var url = "./cocktail_test_test3.php";
+    var url = "../php/cocktail_certificate_exam3.php";
     fetch(url).then(function(response){return response.text();})
     .then(function(responseText){
         document.getElementById('test_content').innerHTML = responseText;
@@ -82,7 +82,7 @@ function test4Content() {
     document.getElementById('test3').classList.remove('active');
     document.getElementById('test4').classList.add('active');
 
-    fetch("./cocktail_test_test4.php")
+    fetch("../php/cocktail_certificate_exam4.php")
     .then(function(response){return response.text()})
     .then(function(responseText){
         document.getElementById('test_content').innerHTML = responseText;
