@@ -64,7 +64,7 @@ header .navbar-white {
 }
 .item.header {
 	/* 메인 이미지  */
-	background-image:url(../images/cocktail.jpg);
+	background-image:url('http://mrhicock.dothome.co.kr/res/image/place_img/main.jpg');
 	background-repeat:no-repeat;
 	background-position:0% top;
 	background-size:cover;
@@ -646,7 +646,7 @@ ul,ol {
 	-webkit-padding-start:0px;
 	-khtml-padding-start:0px;
 	-o-padding-start:0px;
-	padding-right:0px;
+	padding-start:0px;
 	padding-left:0px;
 }
 .footernote {

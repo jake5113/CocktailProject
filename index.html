@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Footer Icon -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<!-- 메뉴 꾸밀 때 쓰는 css -->
-<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Footer Icon -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- 메뉴 꾸밀 때 쓰는 css -->
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+	<!-- 메뉴 js -->
+	<script src="script2.js"></script>
+	<script src="js/index.js"></script>
 </head>
+
 <body>
 
 
-<!-- HEADER =============================-->
-<header class="item header margin-top-0">
-<div class="wrapper">
-	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
-			<i class="fa fa-bars"></i>
-			<span class="sr-only">Toggle navigation</span>
-			</button>
-			<a href="index.html" class="navbar-brand brand"> Cocktail with jake </a>
-		</div>
-		<div id="navbar-collapse-02" class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="propClone"><a href="index.html">Home</a></li>
-				<li class="propClone"><a href="shop.html">Introduce</a></li>
-				<li class="propClone"><a href="product.html">Recipes</a></li>
-				<li class="propClone"><a href="checkout.html">Place</a></li>
-				<li class="propClone"><a href="contact.html">About Test</a></li>
-			</ul>
-		</div>
-	</div>
-	</nav>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<div class="text-homeimage">
-					<!-- 화면에 보여질 코멘트 -->
-					<div class="maintext-image" data-scrollreveal="enter top over 1.5s after 0.1s">
-						 Cocktail 
+	<!-- HEADER =============================-->
+	<header class="item header margin-top-0">
+		<div class="wrapper">
+			<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle"
+							type="button">
+							<i class="fa fa-bars"></i>
+							<span class="sr-only">Toggle navigation</span>
+						</button>
+						<a href="index.html" class="navbar-brand brand"> Cocktail with jake </a>
 					</div>
-					<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.3s">
-						 With
+					<div id="navbar-collapse-02" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="propClone"><a href="index.html">Home</a></li>
+							<li class="propClone" onclick="loadHTML('cocktail_introduce')"><a href="#">Introduce</a>
+							</li>
+							<li class="propClone" onclick="loadHTML('cocktail_place')"><a href="#">Recipes</a></li>
+							<li class="propClone" onclick="loadHTML('cocktail_recipes')"><a href="#">Place</a></li>
+							<li class="propClone" onclick="loadHTML('cocktail_certificate')"><a href="#">About Test</a>
+							</li>
+						</ul>
 					</div>
-					<div class="maintext-image" data-scrollreveal="enter bottom over 4.0s after 0.3s">
-						Jake
-				   </div>
+				</div>
+			</nav>
+			<!-- 화면에 보여질 사진 홈 제외 없는 것으로...-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="text-homeimage">
+							<!-- 화면에 보여질 코멘트 -->
+							<div class="maintext-image" data-scrollreveal="enter top over 1.5s after 0.1s">
+								Cocktail
+							</div>
+							<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.3s">
+								With
+							</div>
+							<div class="maintext-image" data-scrollreveal="enter bottom over 4.0s after 0.3s">
+								Jake
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</header>
+
+	<!-- MAIN =============================-->
+	<div id="target">
+
 	</div>
-</div>
-</header>
-
-<!-- MAIN =============================-->
-<div id="target">
-
-</div>
-
-
-
-<!-- FOOTER =============================-->
-<div class="footer text-center">
-	<div class="container">
-		<div class="row">
-			<p class="footernote">
-				 Connect OurTeam
-			</p>
-			<ul class="social-iconsfooter">
-				<li><a href="index.html"><i class="fa fa-phone"></i></a></li>
-				<li><a href="index.html"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="index.html"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="index.html"><i class="fa fa-google-plus"></i></a></li>
-				<li><a href="index.html"><i class="fa fa-pinterest"></i></a></li>
-			</ul>
-			<p>
-				 &copy;2023/05/12<br/>
-				Contact us <a href="https://wooded-aphid-86c.notion.site/Cocktail-Progect-3b56d427f598426783094e2af703b3b3">CocktailTeam</a>
-			</p>
+	<!-- FOOTER =============================-->
+	<div class="footer text-center">
+		<div class="container">
+			<div class="row">
+				<p class="footernote">
+					Connect OurTeam
+				</p>
+				<ul class="social-iconsfooter">
+					<li><a href="index.html"><i class="fa fa-phone"></i></a></li>
+					<li><a href="index.html"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="index.html"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="index.html"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="index.html"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+				<p>
+					&copy;2023/05/12<br />
+					Contact us <a
+						href="https://wooded-aphid-86c.notion.site/Cocktail-Progect-3b56d427f598426783094e2af703b3b3">CocktailTeam</a>
+				</p>
+			</div>
 		</div>
 	</div>
-</div>
 
-<!-- SCRIPTS =============================-->
-<script src="js/jquery-.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/anim.js"></script>
+	<!-- SCRIPTS =============================-->
+	<script src="js/jquery-.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/anim.js"></script>
 
-	
+
 </body>
+
 </html>
