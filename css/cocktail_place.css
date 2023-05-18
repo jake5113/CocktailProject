@@ -4,8 +4,11 @@ fieldset{
     border: 0 solid black;
 }
 
-body{
-    background-color: black;
-
+#map{
+  
+    width: 800px;
+    height:500px;
+    position:relative;
+    overflow: hidden;
 }
 
