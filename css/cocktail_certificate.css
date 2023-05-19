@@ -1,27 +1,27 @@
-#pc_screen {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #table_top {
     display: inline-block;
     border: 1px dashed black;
     padding: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-top: 3%;
-    margin-left: 5%;
     margin-bottom: 3%;
     border-radius: 20px;
 }
 
 #table_test_content {
-    text-align: center;
-    vertical-align: middle;
     display: inline-block;
     border: 1px dashed rgb(216, 216, 216);
     border-collapse: collapse;
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#table_test_content th, #table_test_content td {
+    text-align: center;
+    vertical-align: middle;
+    width: 8%;
 }
 
 #pc_screen {
@@ -31,7 +31,7 @@
 
 #table_test_content th, #table_test_content td,
 #table_test_data th, #table_test_data td {
-    padding: 8px 10px;
+    padding: 15px 10px;
 }
 
 #table_test_data {
@@ -39,7 +39,8 @@
     border: 1px dashed rgb(216, 216, 216);
     border-radius: 20px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #table_test_data th, #table_test_data td {
@@ -76,7 +77,7 @@
     border-radius: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 #table_certificate_info {
