@@ -40,11 +40,10 @@
     border-radius: 20px;
     margin-bottom: 30px;
     margin-left: 5%;
-    margin-right: 5%;
 }
 
 #table_test_data th, #table_test_data td {
-    width: 850px;
+    width: 95%;
 }
 
 .border_bottom {
@@ -84,7 +83,7 @@
     display: inline-block;
     border: 1px dashed rgb(216, 216, 216);
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 
 #table_certificate_info td {
