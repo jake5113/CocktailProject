@@ -1,11 +1,22 @@
 function loadHTML(id) {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            document.getElementById('target').innerHTML = xhr.responseText;
-        }
-    }
     let url = '../php/load_menu.php?id=' + id;
-    xhr.open('GET', url, true);
-    xhr.send(); //php 파일만들기
+
+    fetch(url)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('target').innerHTML = html;
+            var scripts = document.querySelectorAll("#target script")
+
+            scripts.forEach(s => {
+                var script = document.createElement('script')
+                script.src = s.src
+                document.head.appendChild(script)
+            })
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+
 }
+
+
