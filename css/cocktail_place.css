@@ -105,7 +105,7 @@
 
 #placesList .info .jibun {
     padding-left: 26px;
-    background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;
+    background: url('../res/image/place_img/jibun.png') no-repeat;
 }
 
 #placesList .info .tel {
@@ -118,7 +118,7 @@
     width: 36px;
     height: 37px;
     margin: 10px 10px 10px 10px;
-    background: url(https://firebasestorage.googleapis.com/v0/b/groupwaremy-803bb.appspot.com/o/marker.png?alt=media&token=1db45d1c-a200-43fb-97e7-8672c0301446) no-repeat;
+    background: url('../res/image/place_img/marker.png') no-repeat;
   
 }
 

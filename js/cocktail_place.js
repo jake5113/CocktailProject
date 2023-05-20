@@ -157,8 +157,8 @@ function getListItem(index, places) {
 
 // 마커를 생성하고 지도 위에 마커를 표시하는 함수
 function addMarker(position, idx, title) {
-    var imageSrc = 'https://firebasestorage.googleapis.com/v0/b/groupwaremy-803bb.appspot.com/o/marker_map.png?alt=media&token=1348d0de-5471-4aec-8260-244f19af0d8c', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-
+    //var imageSrc = 'https://firebasestorage.googleapis.com/v0/b/groupwaremy-803bb.appspot.com/o/marker_map.png?alt=media&token=1348d0de-5471-4aec-8260-244f19af0d8c', // 마커 이미지 url, 스프라이트 이미지를 씁니다
+    var imageSrc = '../res/image/place_img/marker_map.png'
 
         imageSize = new kakao.maps.Size(36, 37),  // 마커 이미지의 크기
         imgOptions = {
