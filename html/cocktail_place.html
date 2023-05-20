@@ -13,25 +13,25 @@
 </head>
 
 <body>
-    <h3 id="title">칵테일 매장 안내</h3>
+    <h2 id="title" style="text-align: center; margin-top: 50px; margin-bottom: 50px; ">칵테일 매장 안내</h3>
 
-    <div class="map_wrap">
-        <div id="map"></div>
-
-        <div id="menu_wrap" class="bg_white">
-            <div class="option">
-                <div>
-                    <form onsubmit="searchPlaces(); return false;">
-                        키워드 : <input type="text" value="서울 칵테일" id="keyword" size="15">
-                        <button type="submit">검색하기</button>
-                    </form>
+        <div class="map_wrap" >
+                <div id="map" style="width: 800px; height: 500px; margin: 0 auto; "></div> <!--map 자체를 나타내는 div-->
+                
+                <div id="menu_wrap" class="bg_white">
+                    <div class="option">
+                        <div>
+                            <form onsubmit="searchPlaces(); return false;" style="margin: 10px;">
+                                <input type="text" value="서울 칵테일" id="keyword" size="15">
+                                <button type="submit">검색하기</button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul id="placesList"></ul>
+                    <div id="pagination"></div>
                 </div>
-            </div>
-            <hr>
-            <ul id="placesList"></ul>
-            <div id="pagination"></div>
         </div>
-    </div>
 
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81e390ca9e92de3c0ffee9608cf8324c&libraries=services"></script>
 
