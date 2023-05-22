@@ -1,14 +1,12 @@
-document.onload = function() {
-    // 컴퓨터를 켰는데 굳이 모바일 화면으로 변경해서 볼 이유가 없으므로..
-    // 처음 화면이 로드될 때 화면의 크기를 판단하여 PC화면으로 보이게 할지,
-    // 모바일 화면으로 보이게할 지 결정한다.
-    var mql = window.matchMedia("screen and (max-width:480px)");
-    if(mql.matches) {
-        document.getElementById('pc_screen').style.display = 'none';
-        document.getElementById('mobile_screen').style.display = 'block';
-        cocktail_certificate_exam3();
-    }
-};
+// 컴퓨터를 켰는데 굳이 모바일 화면으로 변경해서 볼 이유가 없으므로..
+// 처음 화면이 로드될 때 화면의 크기를 판단하여 PC화면으로 보이게 할지,
+// 모바일 화면으로 보이게할 지 결정한다.
+var mql = window.matchMedia("screen and (max-width:480px)");
+if(mql.matches) {
+    document.getElementById('pc_screen').style.display = 'none';
+    document.getElementById('mobile_screen').style.display = 'block';
+    cocktail_certificate_exam3();
+}
 
 
 // 1차 시험 내용
