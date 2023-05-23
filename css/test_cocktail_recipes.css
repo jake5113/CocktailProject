@@ -261,6 +261,17 @@ body {
 
 @media (min-width: 1200px) {
 
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
+        margin-left: calc(-0.5 * var(--bs-gutter-x));
+    }
+
     .row-cols-2>* {
         flex: 0 0 auto;
         width: 50%;
@@ -322,12 +333,16 @@ img {
 }
 
 .fw-bolder {
-    font-size: large;
+    font-size: large !important;
     font-weight: bolder !important;
 }
 
 .info-text {
     font-size: medium;
+}
+
+.title-text {
+    font-size: 5rem !important;
 }
 
 .g-4,

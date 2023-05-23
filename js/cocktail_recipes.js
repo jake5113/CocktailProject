@@ -35,7 +35,7 @@ fetch('../res/json/cocktail_recipes.json')
         + recipe[i].글라스
         + '</p>'
         + '<h5 class="text-gradient fw-bolder">장식</h5>'
-        + '<p>'
+        + '<p class="info-text">'
         + recipe[i].장식
         + '</p>'
         + '</div>'
