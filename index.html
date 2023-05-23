@@ -5,8 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="generator" content="">
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81e390ca9e92de3c0ffee9608cf8324c"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Footer Icon -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -19,56 +18,58 @@
 	<script src="js/jquery-.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/anim.js"></script>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81e390ca9e92de3c0ffee9608cf8324c"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=81e390ca9e92de3c0ffee9608cf8324c&libraries=services"></script>
 
 </head>
 
-<body>
+<body onload="defineMenu()">
 
 
-<!-- HEADER =============================-->
-<header class="item header margin-top-0 index_menu">
-<div class="wrapper">
-	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
-			<i class="fa fa-bars"></i>
-			<span class="sr-only">Toggle navigation</span>
-			</button>
-			<a href="index.html" class="navbar-brand brand"> Cocktail with jake </a>
-		</div>
-		<div id="navbar-collapse-02" class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li class="propClone"><a href="index.html">Home</a></li>
-				<li class="propClone"><a href="shop.html">Introduce</a></li>
-				<li class="propClone"><a href="product.html">Recipes</a></li>
-				<li class="propClone"><a href="checkout.html">Place</a></li>
-				<li class="propClone"><a href="contact.html">About Test</a></li>
-			</ul>
-		</div>
-	</div>
-	</nav>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<div class="text-homeimage">
-					<!-- 화면에 보여질 코멘트 -->
-					<div class="maintext-image" data-scrollreveal="enter top over 1.5s after 0.1s">
-						 Cocktail 
+	<!-- HEADER =============================-->
+	<header class="item header margin-top-0 index_menu">
+		<div class="wrapper">
+			<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle"
+							type="button">
+							<i class="fa fa-bars"></i>
+							<span class="sr-only">Toggle navigation</span>
+						</button onclick="menuAppear()">
+						<a href="index.html" class="navbar-brand brand"> Cocktail with jake </a>
 					</div>
-					<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.3s">
-						 With
+					<div id="navbar-collapse-02" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="propClone" onclick="menuAppear()"><a href="index.html">Home</a></li>
+							<li class="propClone" onclick="loadHTML('cocktail_introduce')"><a href="#">Introduce</a></li>
+							<li class="propClone" onclick="loadHTML('cocktail_recipes')"><a href="#">Recipes</a></li>
+							<li class="propClone" onclick="loadHTML('cocktail_place')"><a href="#">Place</a></li>
+							<li class="propClone" onclick="loadHTML('cocktail_certificate')"><a href="#">About Test</a></li>
+						</ul>
 					</div>
-					<div class="maintext-image" data-scrollreveal="enter bottom over 4.0s after 0.3s">
-						Jake
-				   </div>
+				</div>
+			</nav>
+			<!-- 화면에 보여질 사진 홈 제외 없는 것으로...-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="text-homeimage">
+							<!-- 화면에 보여질 코멘트 -->
+							<div class="maintext-image" data-scrollreveal="enter top over 1.5s after 0.1s">
+								Cocktail
+							</div>
+							<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.3s">
+								With
+							</div>
+							<div class="maintext-image" data-scrollreveal="enter bottom over 4.0s after 0.3s">
+								Jake
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-</header>
+	</header>
 
 	<!-- MAIN =============================-->
 	<div id="target">
