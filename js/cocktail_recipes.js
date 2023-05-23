@@ -24,17 +24,17 @@ fetch('../res/json/cocktail_recipes.json')
         + recipe[i].이름
         + '</h5>'
         + '<!-- Product price-->'
-        + '<h5 class="text-gradient">재료</h5>'
+        + '<h5 class="text-gradient fw-bolder">재료</h5>'
         + gredient(recipe[i].재료)
-        + '<h5 class="text-gradient">기법</h5>'
-        + '<p>'
+        + '<h5 class="text-gradient fw-bolder">기법</h5>'
+        + '<p class="info-text">'
         + recipe[i].기법
         + '</p>'
-        + '<h5 class="text-gradient">글라스</h5>'
-        + '<p>'
+        + '<h5 class="text-gradient fw-bolder">글라스</h5>'
+        + '<p class="info-text">'
         + recipe[i].글라스
         + '</p>'
-        + '<h5 class="text-gradient">장식</h5>'
+        + '<h5 class="text-gradient fw-bolder">장식</h5>'
         + '<p>'
         + recipe[i].장식
         + '</p>'
@@ -52,7 +52,7 @@ fetch('../res/json/cocktail_recipes.json')
 function gredient(object) {
   var sentences = ''
   for (let index = 0; index < Object.keys(object).length; index++) {
-    sentences += '<li>' + Object.keys(object)[index] + ' ' + Object.values(object)[index] + '</li>'
+    sentences += '<li class="info-text">' + Object.keys(object)[index] + ' ' + Object.values(object)[index] + '</li>'
   }
   return sentences
 }
