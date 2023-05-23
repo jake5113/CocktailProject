@@ -89,7 +89,7 @@
 
 .col {
     flex: 1 0 0%;
-  }
+}
 
 .text-center {
     text-align: center !important;
@@ -194,9 +194,13 @@ body {
     .h5,
     h5 {
         margin-top: 0;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
         font-weight: 500;
         line-height: 1.2;
+    }
+
+    .info-text {
+        font-size: medium;
     }
 
 }
@@ -210,8 +214,53 @@ body {
     h5,
     .h5 {
         margin-top: 0.7rem;
-        font-size: 0.75rem;
+        font-size: 1.5rem;
     }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
+        margin-left: calc(-0.5 * var(--bs-gutter-x));
+    }
+
+    .info-text {
+        font-size: 0.8rem;
+    }
+
+    .row-cols-2>* {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .row-cols-md-3>* {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+
+    .row-cols-xl-4>* {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .px-lg-5 {
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+
+
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
 
     .row {
         --bs-gutter-x: 1.5rem;
@@ -249,36 +298,6 @@ body {
         padding-bottom: 3rem !important;
     }
 
-}
-
-@media (min-width: 1200px) {
-
-    .row-cols-2>* {
-        flex: 0 0 auto;
-        width: 50%;
-    }
-
-    .row-cols-md-3>* {
-        flex: 0 0 auto;
-        width: 33.3333333333%;
-    }
-
-    .row-cols-xl-4>* {
-        flex: 0 0 auto;
-        width: 25%;
-    }
-
-    .px-lg-5 {
-        padding-right: 3rem !important;
-        padding-left: 3rem !important;
-    }
-
-
-    .py-5 {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
-    }
-
     .rcontainer {
         max-width: 1140px;
     }
@@ -286,7 +305,7 @@ body {
     h5,
     .h5 {
         margin-top: 0.5rem;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .display-5 {
@@ -314,7 +333,16 @@ img {
 }
 
 .fw-bolder {
+    font-size: large !important;
     font-weight: bolder !important;
+}
+
+.info-text {
+    font-size: medium;
+}
+
+.title-text {
+    font-size: 5rem !important;
 }
 
 .g-4,
@@ -355,6 +383,7 @@ img {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
 }
+
 .flex_use_container {
     display: flex;
     justify-content: center;
